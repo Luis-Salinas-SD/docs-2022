@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bievenidos on Mis Documentaciones</title>
+    <link>https://luis-salinas-sd.github.io/docs.github.io/index.html</link>
+    <description>Recent content in Bievenidos on Mis Documentaciones</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://luis-salinas-sd.github.io/docs.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript</title>
+      <link>https://luis-salinas-sd.github.io/docs.github.io/javascript/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://luis-salinas-sd.github.io/docs.github.io/javascript/index.html</guid>
+      <description>Javascript Una breve guia sobre Javascript y algunos ejemplos y ejercicios resueltos.
+Recursos Javascipt - Eloquent (libro) Javacript - colección You don&amp;rsquo;t know</description>
+    </item>
+    <item>
+      <title>MySQL</title>
+      <link>https://luis-salinas-sd.github.io/docs.github.io/mysql/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://luis-salinas-sd.github.io/docs.github.io/mysql/index.html</guid>
+      <description>Capitulo 2 MySQL Primero lo primero, tienes que saber cómo pronunciarlo: MY-ES-KYU-EL’
+Es un sistema de gestión de bases de datos relacionales de código abierto (RDBMS, por sus siglas en inglés) con un modelo cliente-servidor. RDBMS es un software o servicio utilizado para crear y administrar bases de datos basadas en un modelo relacional</description>
+    </item>
+    <item>
+      <title>React</title>
+      <link>https://luis-salinas-sd.github.io/docs.github.io/react/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://luis-salinas-sd.github.io/docs.github.io/react/index.html</guid>
+      <description>Capitulo 3 React Notas de React sobre el curso de Fernando Udemy</description>
+    </item>
+  </channel>
+</rss>

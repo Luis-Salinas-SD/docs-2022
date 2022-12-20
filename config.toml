@@ -1,0 +1,6 @@
+themeVariant = 'relearn-dark'
+baseURL = 'https://luis-salinas-sd.github.io/docs.github.io/'
+languageCode = 'en-us'
+title = 'Mis Documentaciones'
+theme = 'relearn'
+publishDir = 'docs'
