@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React on Mis Documentaciones</title>
-    <link>https://luis-salinas-sd.github.io/docs-2022.io/react/index.html</link>
+    <link>https://luis-salinas-sd.github.io/docs-2022/react/index.html</link>
     <description>Recent content in React on Mis Documentaciones</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://luis-salinas-sd.github.io/docs-2022.io/react/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://luis-salinas-sd.github.io/docs-2022/react/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

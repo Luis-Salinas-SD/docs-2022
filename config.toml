@@ -1,5 +1,5 @@
 themeVariant = 'relearn-dark'
-baseURL = 'https://luis-salinas-sd.github.io/docs-2022.io/'
+baseURL = 'https://luis-salinas-sd.github.io/docs-2022/'
 languageCode = 'en-us'
 title = 'Mis Documentaciones'
 theme = 'relearn'
