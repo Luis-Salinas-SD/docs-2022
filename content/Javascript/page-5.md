@@ -52,15 +52,16 @@ Aqui hay un objeto llamdo **tutor** y dentro de sus propiedades se encunetra una
 
 La propiedad que contiene esta funcion es **fullNombre.**
 
-````javascript
+```javascript
 let tutor = {
-    nombre: "Luis",
-    apellido: "Salinas",
-    fullNombre: function () {
-        setTimeout(() => { console.log(this.nombre + " " + this.apellido); }, 1000)
-    }
-}
+  nombre: "Luis",
+  apellido: "Salinas",
+  fullNombre: function () {
+    setTimeout(() => {
+      console.log(this.nombre + " " + this.apellido);
+    }, 1000);
+  },
+};
 // console.log(tutor.apellido);
 tutor.fullNombre();
-```javascript
-````
+```

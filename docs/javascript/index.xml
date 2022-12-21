@@ -56,7 +56,7 @@ nombre_function = (parametros) =&amp;gt; { cuerpo_funcion; }; Ejemplos: imprimir
 exiten dos tipos:
 Global scoupe [variables globales] Las variables globales se pueden mandar a llamar en cualquier parte del programas.
 local scoupe [Variables locales] Adiferencia de las globales, las locales solo se pueden declarar en la funciones y pueden ser mandadas a llamar en la misma.
-var nombre = &amp;#34;Luis&amp;#34;;//scoupe global function hola() { alert(&amp;#34;hola &amp;#34; + nombre); }hola(); function adios(){ let nombre = &amp;#34;Ana&amp;#34;; //scoupe local alert(&amp;#34;adios &amp;#34; + nombre); }adios(); CONST: Es una constante la cual NO cambiara su valor en ningún momento en el futuro.</description>
+var nombre = &amp;#34;Luis&amp;#34;; //scoupe global function hola() { alert(&amp;#34;hola &amp;#34; + nombre); } hola(); function adios() { let nombre = &amp;#34;Ana&amp;#34;; //scoupe local alert(&amp;#34;adios &amp;#34; + nombre); } adios(); CONST: Es una constante la cual NO cambiara su valor en ningún momento en el futuro.</description>
     </item>
     <item>
       <title>Arreglos</title>
@@ -73,7 +73,7 @@ Declaración: let arreglo = [&amp;#34;hola&amp;#34;, 1, true, {}]; Declración d
       <guid>https://luis-salinas-sd.github.io/docs-2022/javascript/page-8/index.html</guid>
       <description>Objetos - JSON Declaración de un objeto JSON
 Puede recibir diferentes valores como:
-arreglos objetos funciones (metodos) booleans enteros strings let video = { titulo: &amp;#34;piloto&amp;#34;, duración: 2, formato: &amp;#34;avi&amp;#34;, //!arreglo arreglo: [&amp;#34;uno&amp;#34;, &amp;#34;dos&amp;#34;, &amp;#34;tres&amp;#34;], //!metodo inscribir: function (usuario) { console.log(usuario + &amp;#34; Esta inscrito&amp;#34;); } } Dentro de una objeto las variables son llamada propiedades o atributos.
+arreglos objetos funciones (metodos) booleans enteros strings let video = { titulo: &amp;#34;piloto&amp;#34;, duración: 2, formato: &amp;#34;avi&amp;#34;, //!arreglo arreglo: [&amp;#34;uno&amp;#34;, &amp;#34;dos&amp;#34;, &amp;#34;tres&amp;#34;], //!metodo inscribir: function (usuario) { console.log(usuario + &amp;#34; Esta inscrito&amp;#34;); }, }; Dentro de una objeto las variables son llamada propiedades o atributos.
 Dentro de un objeto las funciones son llamadas metodos.
 De acuerdo al objeto anterior esto es lo que podemos hacer.</description>
     </item>
@@ -84,7 +84,7 @@ De acuerdo al objeto anterior esto es lo que podemos hacer.</description>
       <guid>https://luis-salinas-sd.github.io/docs-2022/javascript/page-9/index.html</guid>
       <description>Función Constructura A continuación se muestra una función constructora de objetos, viendo asi cómo podemos construir un objeto o varios a traves de una función.
 Es importante mencionar que en una función constructora el metodo de esta debe de iniciar con this.nombre_metodo.
-Función Constructora: function Curso(titulo, duracion, formato) { //! Propiedades/Atributos this.titulo = titulo; this.duracion = duracion; this.formato = formato; //! Metodo this.inscribir = function (usuario) { console.log(usuario + &amp;#34;Está Inscrito&amp;#34;); } } Creación de un objeto apartir de una función constructora: let cursoJavaScript = new Curso(&amp;#34;curso java pro&amp;#34;, &amp;#34;5hrs&amp;#34;, &amp;#34;Mp4&amp;#34;); let cursoRuby = new Curso(&amp;#34;Curso de Ruby Pro&amp;#34;); Mandar a llamar el objeto con sus propiedades/atributos: console.</description>
+Función Constructora: function Curso(titulo, duracion, formato) { //! Propiedades/Atributos this.titulo = titulo; this.duracion = duracion; this.formato = formato; //! Metodo this.inscribir = function (usuario) { console.log(usuario + &amp;#34;Está Inscrito&amp;#34;); }; } Creación de un objeto apartir de una función constructora: let cursoJavaScript = new Curso(&amp;#34;curso java pro&amp;#34;, &amp;#34;5hrs&amp;#34;, &amp;#34;Mp4&amp;#34;); let cursoRuby = new Curso(&amp;#34;Curso de Ruby Pro&amp;#34;); Mandar a llamar el objeto con sus propiedades/atributos: console.</description>
     </item>
     <item>
       <title>Clases</title>

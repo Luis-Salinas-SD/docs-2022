@@ -8,19 +8,19 @@
     <meta name="description" content="">
     <title>Funcion constructora :: Mis Documentaciones</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/docs-2022/css/fontawesome-all.min.css?1671569183" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/fontawesome-all.min.css?1671569183" rel="stylesheet"></noscript>
-    <link href="/docs-2022/css/featherlight.min.css?1671569183" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/featherlight.min.css?1671569183" rel="stylesheet"></noscript>
-    <link href="/docs-2022/css/auto-complete.css?1671569183" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/auto-complete.css?1671569183" rel="stylesheet"></noscript>
-    <link href="/docs-2022/css/perfect-scrollbar.min.css?1671569183" rel="stylesheet">
-    <link href="/docs-2022/css/nucleus.css?1671569183" rel="stylesheet">
-    <link href="/docs-2022/css/fonts.css?1671569183" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/fonts.css?1671569183" rel="stylesheet"></noscript>
-    <link href="/docs-2022/css/theme.css?1671569183" rel="stylesheet">
-    <link href="/docs-2022/css/theme-relearn-light.css?1671569183" rel="stylesheet" id="variant-style">
-    <link href="/docs-2022/css/ie.css?1671569183" rel="stylesheet">
-    <link href="/docs-2022/css/variant.css?1671569183" rel="stylesheet">
-    <link href="/docs-2022/css/print.css?1671569183" rel="stylesheet" media="print">
-    <script src="/docs-2022/js/url.js?1671569183"></script>
-    <script src="/docs-2022/js/variant.js?1671569183"></script>
+    <link href="/docs-2022/css/fontawesome-all.min.css?1671583220" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/fontawesome-all.min.css?1671583220" rel="stylesheet"></noscript>
+    <link href="/docs-2022/css/featherlight.min.css?1671583220" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/featherlight.min.css?1671583220" rel="stylesheet"></noscript>
+    <link href="/docs-2022/css/auto-complete.css?1671583220" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/auto-complete.css?1671583220" rel="stylesheet"></noscript>
+    <link href="/docs-2022/css/perfect-scrollbar.min.css?1671583220" rel="stylesheet">
+    <link href="/docs-2022/css/nucleus.css?1671583220" rel="stylesheet">
+    <link href="/docs-2022/css/fonts.css?1671583220" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/fonts.css?1671583220" rel="stylesheet"></noscript>
+    <link href="/docs-2022/css/theme.css?1671583220" rel="stylesheet">
+    <link href="/docs-2022/css/theme-relearn-light.css?1671583220" rel="stylesheet" id="variant-style">
+    <link href="/docs-2022/css/ie.css?1671583220" rel="stylesheet">
+    <link href="/docs-2022/css/variant.css?1671583220" rel="stylesheet">
+    <link href="/docs-2022/css/print.css?1671583220" rel="stylesheet" media="print">
+    <script src="/docs-2022/js/url.js?1671583220"></script>
+    <script src="/docs-2022/js/variant.js?1671583220"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -37,7 +37,7 @@
       var baseUriFull='https:\/\/luis-salinas-sd.github.io\/docs-2022/';
       window.variants && variants.init( [ 'relearn-light' ] );
     </script>
-    <script src="/docs-2022/js/jquery.min.js?1671569183" defer></script>
+    <script src="/docs-2022/js/jquery.min.js?1671583220" defer></script>
   </head>
   <body class="mobile-support html" data-url="/docs-2022/javascript/page-9/index.html">
     <div id="body" class="default-animation">
@@ -91,28 +91,28 @@
 <ul>
 <li>Función Constructora:</li>
 </ul>
-<pre tabindex="0"><code>function Curso(titulo, duracion, formato) {
-    //! Propiedades/Atributos
-    this.titulo = titulo;
-    this.duracion = duracion;
-    this.formato = formato;
-
-    //! Metodo
-    this.inscribir = function (usuario) {
-        console.log(usuario + &#34;Está Inscrito&#34;);
-    }
-}
-</code></pre><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Curso</span>(<span style="color:#a6e22e">titulo</span>, <span style="color:#a6e22e">duracion</span>, <span style="color:#a6e22e">formato</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//! Propiedades/Atributos
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">titulo</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">titulo</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">duracion</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">duracion</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">formato</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formato</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//! Metodo
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">inscribir</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">usuario</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">usuario</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;Está Inscrito&#34;</span>);
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
 <li>Creación de un objeto apartir de una función constructora:</li>
 </ul>
-<pre tabindex="0"><code>let cursoJavaScript = new Curso(&#34;curso java pro&#34;, &#34;5hrs&#34;, &#34;Mp4&#34;);
-let cursoRuby = new Curso(&#34;Curso de Ruby Pro&#34;);
-</code></pre><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cursoJavaScript</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Curso</span>(<span style="color:#e6db74">&#34;curso java pro&#34;</span>, <span style="color:#e6db74">&#34;5hrs&#34;</span>, <span style="color:#e6db74">&#34;Mp4&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cursoRuby</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Curso</span>(<span style="color:#e6db74">&#34;Curso de Ruby Pro&#34;</span>);
+</span></span></code></pre></div><ul>
 <li>Mandar a llamar el objeto con sus <strong>propiedades/atributos</strong>:</li>
 </ul>
-<pre tabindex="0"><code>console.log(cursoJavaScript.titulo, cursoJavaScript.duracion, cursoJavaScript.formato);
-console.log(cursoRuby.titulo);
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">cursoJavaScript</span>.<span style="color:#a6e22e">titulo</span>, <span style="color:#a6e22e">cursoJavaScript</span>.<span style="color:#a6e22e">duracion</span>, <span style="color:#a6e22e">cursoJavaScript</span>.<span style="color:#a6e22e">formato</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">cursoRuby</span>.<span style="color:#a6e22e">titulo</span>);
+</span></span></code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -191,12 +191,12 @@ console.log(cursoRuby.titulo);
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/docs-2022/js/auto-complete.js?1671569183" defer></script>
-        <script src="/docs-2022/js/lunr.min.js?1671569183" defer></script>
-        <script src="/docs-2022/js/lunr.stemmer.support.min.js?1671569183" defer></script>
-        <script src="/docs-2022/js/lunr.multi.min.js?1671569183" defer></script>
-        <script src="/docs-2022/js/lunr.en.min.js?1671569183" defer></script>
-        <script src="/docs-2022/js/search.js?1671569183" defer></script>
+        <script src="/docs-2022/js/auto-complete.js?1671583220" defer></script>
+        <script src="/docs-2022/js/lunr.min.js?1671583220" defer></script>
+        <script src="/docs-2022/js/lunr.stemmer.support.min.js?1671583220" defer></script>
+        <script src="/docs-2022/js/lunr.multi.min.js?1671583220" defer></script>
+        <script src="/docs-2022/js/lunr.en.min.js?1671583220" defer></script>
+        <script src="/docs-2022/js/search.js?1671583220" defer></script>
       </div>
       <div id="homelinks" class="default-animation">
         <ul>
@@ -258,9 +258,9 @@ console.log(cursoRuby.titulo);
         </div>
       </div>
     </aside>
-    <script src="/docs-2022/js/clipboard.min.js?1671569183" defer></script>
-    <script src="/docs-2022/js/perfect-scrollbar.min.js?1671569183" defer></script>
-    <script src="/docs-2022/js/featherlight.min.js?1671569183" defer></script>
-    <script src="/docs-2022/js/theme.js?1671569183" defer></script>
+    <script src="/docs-2022/js/clipboard.min.js?1671583220" defer></script>
+    <script src="/docs-2022/js/perfect-scrollbar.min.js?1671583220" defer></script>
+    <script src="/docs-2022/js/featherlight.min.js?1671583220" defer></script>
+    <script src="/docs-2022/js/theme.js?1671583220" defer></script>
   </body>
 </html>

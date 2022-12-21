@@ -8,19 +8,19 @@
     <meta name="description" content="">
     <title>Clases :: Mis Documentaciones</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/docs-2022/css/fontawesome-all.min.css?1671569183" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/fontawesome-all.min.css?1671569183" rel="stylesheet"></noscript>
-    <link href="/docs-2022/css/featherlight.min.css?1671569183" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/featherlight.min.css?1671569183" rel="stylesheet"></noscript>
-    <link href="/docs-2022/css/auto-complete.css?1671569183" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/auto-complete.css?1671569183" rel="stylesheet"></noscript>
-    <link href="/docs-2022/css/perfect-scrollbar.min.css?1671569183" rel="stylesheet">
-    <link href="/docs-2022/css/nucleus.css?1671569183" rel="stylesheet">
-    <link href="/docs-2022/css/fonts.css?1671569183" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/fonts.css?1671569183" rel="stylesheet"></noscript>
-    <link href="/docs-2022/css/theme.css?1671569183" rel="stylesheet">
-    <link href="/docs-2022/css/theme-relearn-light.css?1671569183" rel="stylesheet" id="variant-style">
-    <link href="/docs-2022/css/ie.css?1671569183" rel="stylesheet">
-    <link href="/docs-2022/css/variant.css?1671569183" rel="stylesheet">
-    <link href="/docs-2022/css/print.css?1671569183" rel="stylesheet" media="print">
-    <script src="/docs-2022/js/url.js?1671569183"></script>
-    <script src="/docs-2022/js/variant.js?1671569183"></script>
+    <link href="/docs-2022/css/fontawesome-all.min.css?1671583220" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/fontawesome-all.min.css?1671583220" rel="stylesheet"></noscript>
+    <link href="/docs-2022/css/featherlight.min.css?1671583220" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/featherlight.min.css?1671583220" rel="stylesheet"></noscript>
+    <link href="/docs-2022/css/auto-complete.css?1671583220" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/auto-complete.css?1671583220" rel="stylesheet"></noscript>
+    <link href="/docs-2022/css/perfect-scrollbar.min.css?1671583220" rel="stylesheet">
+    <link href="/docs-2022/css/nucleus.css?1671583220" rel="stylesheet">
+    <link href="/docs-2022/css/fonts.css?1671583220" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/fonts.css?1671583220" rel="stylesheet"></noscript>
+    <link href="/docs-2022/css/theme.css?1671583220" rel="stylesheet">
+    <link href="/docs-2022/css/theme-relearn-light.css?1671583220" rel="stylesheet" id="variant-style">
+    <link href="/docs-2022/css/ie.css?1671583220" rel="stylesheet">
+    <link href="/docs-2022/css/variant.css?1671583220" rel="stylesheet">
+    <link href="/docs-2022/css/print.css?1671583220" rel="stylesheet" media="print">
+    <script src="/docs-2022/js/url.js?1671583220"></script>
+    <script src="/docs-2022/js/variant.js?1671583220"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -37,7 +37,7 @@
       var baseUriFull='https:\/\/luis-salinas-sd.github.io\/docs-2022/';
       window.variants && variants.init( [ 'relearn-light' ] );
     </script>
-    <script src="/docs-2022/js/jquery.min.js?1671569183" defer></script>
+    <script src="/docs-2022/js/jquery.min.js?1671583220" defer></script>
   </head>
   <body class="mobile-support html" data-url="/docs-2022/javascript/page-10/index.html">
     <div id="body" class="default-animation">
@@ -98,66 +98,64 @@
 <li>Las clases no reciben parametros.</li>
 <li>Las clases tienen un metodo especial que se llama <strong>constructor</strong> y recibe las propiedades del objeto, este se ejecuta en el momento de instanciar la clase.</li>
 </ul>
-<pre tabindex="0"><code>// ++++++++++ clase ++++++++++
-class Perro{
-    // ++++++++++ constructor ++++++++++
-    constructor(nombre,genero){
-        //atributos
-        this.nombre = nombre;
-        this.genero = genero;
-    }// ++++++++++ constructor ++++++++++
-
-    //++++++++++ Metodo ++++++++++
-    ladrad(){
-        console.log(&#34;Guaf Guaf&#34;);
-    }//++++++++++ Metodo ++++++++++
-    
-}// ++++++++++ clase ++++++++++
-
-const simba = new Perro(&#34;simba&#34;,&#34;macho&#34;);
-console.log(simba);	//mandar a llamar al objeto
-simba.ladrad();	// mandar a llamar al metodo
-</code></pre><h3 id="herencia">Herencia</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// ++++++++++ clase ++++++++++
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Perro</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ++++++++++ constructor ++++++++++
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">nombre</span>, <span style="color:#a6e22e">genero</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//atributos
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">nombre</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nombre</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">genero</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">genero</span>;
+</span></span><span style="display:flex;"><span>  } <span style="color:#75715e">// ++++++++++ constructor ++++++++++
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//++++++++++ Metodo ++++++++++
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">ladrad</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Guaf Guaf&#34;</span>);
+</span></span><span style="display:flex;"><span>  } <span style="color:#75715e">//++++++++++ Metodo ++++++++++
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>} <span style="color:#75715e">// ++++++++++ clase ++++++++++
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">simba</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Perro</span>(<span style="color:#e6db74">&#34;simba&#34;</span>, <span style="color:#e6db74">&#34;macho&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">simba</span>); <span style="color:#75715e">//mandar a llamar al objeto
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">simba</span>.<span style="color:#a6e22e">ladrad</span>(); <span style="color:#75715e">// mandar a llamar al metodo
+</span></span></span></code></pre></div><h3 id="herencia">Herencia</h3>
 <p>Para utilizar herencia se necesita la palabra reservada <strong>extends</strong> seguido de la clase padre o de la que quiere que herede.</p>
 <p>la palabra reservada <strong>super()</strong> manda a llamar al constructor de la calse padre.</p>
-<pre tabindex="0"><code>class Perro {
-    // ++++++++++ constructor ++++++++++
-    constructor(nombre, genero) {
-        //atributos
-        this.nombre = nombre;
-        this.genero = genero;
-    } // ++++++++++ constructor ++++++++++
-
-    //++++++++++ Metodo ++++++++++
-    ladrad() {
-        console.log(` guaf guaf mi nombre es ${this.nombre}`);
-    }
-    caminar(){
-        console.log(&#34;Toy caminando&#34;);
-    }
-    //++++++++++ Metodo ++++++++++
-} // ++++++++++ clase ++++++++++
-
-const simba = new Perro(&#34;simba&#34;, &#34;macho&#34;);
-console.log(simba);//! mandar a llamar al objeto
-simba.ladrad();//! mandar a llamar al metodo
-
-
-// ############ HERENCIA ##########
-class Gato extends Perro{
-    constructor(nombre, genero, color){
-        super(nombre, genero);
-        this.color = color;
-    }
-    ladrad(){
-        console.log(`miau miau mi nombre es ${this.nombre}`);
-    }
-}
-const beto = new Gato(&#34;beto&#34;,&#34;hembra&#34;,&#34;blanco&#34;);
-console.log(beto);
-beto.ladrad();
-beto.caminar();
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Perro</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ++++++++++ constructor ++++++++++
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">nombre</span>, <span style="color:#a6e22e">genero</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//atributos
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">nombre</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nombre</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">genero</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">genero</span>;
+</span></span><span style="display:flex;"><span>  } <span style="color:#75715e">// ++++++++++ constructor ++++++++++
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//++++++++++ Metodo ++++++++++
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">ladrad</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">` guaf guaf mi nombre es </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">nombre</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">caminar</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Toy caminando&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//++++++++++ Metodo ++++++++++
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>} <span style="color:#75715e">// ++++++++++ clase ++++++++++
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">simba</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Perro</span>(<span style="color:#e6db74">&#34;simba&#34;</span>, <span style="color:#e6db74">&#34;macho&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">simba</span>); <span style="color:#75715e">//! mandar a llamar al objeto
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">simba</span>.<span style="color:#a6e22e">ladrad</span>(); <span style="color:#75715e">//! mandar a llamar al metodo
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ############ HERENCIA ##########
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Gato</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Perro</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">nombre</span>, <span style="color:#a6e22e">genero</span>, <span style="color:#a6e22e">color</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">nombre</span>, <span style="color:#a6e22e">genero</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">color</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ladrad</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`miau miau mi nombre es </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">nombre</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">beto</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Gato</span>(<span style="color:#e6db74">&#34;beto&#34;</span>, <span style="color:#e6db74">&#34;hembra&#34;</span>, <span style="color:#e6db74">&#34;blanco&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">beto</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">beto</span>.<span style="color:#a6e22e">ladrad</span>();
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">beto</span>.<span style="color:#a6e22e">caminar</span>();
+</span></span></code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -236,12 +234,12 @@ beto.caminar();
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/docs-2022/js/auto-complete.js?1671569183" defer></script>
-        <script src="/docs-2022/js/lunr.min.js?1671569183" defer></script>
-        <script src="/docs-2022/js/lunr.stemmer.support.min.js?1671569183" defer></script>
-        <script src="/docs-2022/js/lunr.multi.min.js?1671569183" defer></script>
-        <script src="/docs-2022/js/lunr.en.min.js?1671569183" defer></script>
-        <script src="/docs-2022/js/search.js?1671569183" defer></script>
+        <script src="/docs-2022/js/auto-complete.js?1671583220" defer></script>
+        <script src="/docs-2022/js/lunr.min.js?1671583220" defer></script>
+        <script src="/docs-2022/js/lunr.stemmer.support.min.js?1671583220" defer></script>
+        <script src="/docs-2022/js/lunr.multi.min.js?1671583220" defer></script>
+        <script src="/docs-2022/js/lunr.en.min.js?1671583220" defer></script>
+        <script src="/docs-2022/js/search.js?1671583220" defer></script>
       </div>
       <div id="homelinks" class="default-animation">
         <ul>
@@ -303,9 +301,9 @@ beto.caminar();
         </div>
       </div>
     </aside>
-    <script src="/docs-2022/js/clipboard.min.js?1671569183" defer></script>
-    <script src="/docs-2022/js/perfect-scrollbar.min.js?1671569183" defer></script>
-    <script src="/docs-2022/js/featherlight.min.js?1671569183" defer></script>
-    <script src="/docs-2022/js/theme.js?1671569183" defer></script>
+    <script src="/docs-2022/js/clipboard.min.js?1671583220" defer></script>
+    <script src="/docs-2022/js/perfect-scrollbar.min.js?1671583220" defer></script>
+    <script src="/docs-2022/js/featherlight.min.js?1671583220" defer></script>
+    <script src="/docs-2022/js/theme.js?1671583220" defer></script>
   </body>
 </html>
