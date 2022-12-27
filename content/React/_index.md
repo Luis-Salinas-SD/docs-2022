@@ -1,7 +1,7 @@
 +++
 title = "React"
 chapter = true
-weight = 15
+weight = 16
 pre = "<b>3. </b>"
 +++
 
@@ -9,4 +9,4 @@ pre = "<b>3. </b>"
 
 # React
 
-Notas de React sobre el curso de Fernando Udemy
+Notas sobre React

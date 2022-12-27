@@ -32,7 +32,14 @@ Es un sistema de gestión de bases de datos relacionales de código abierto (RDB
       <link>https://luis-salinas-sd.github.io/docs-2022/react/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://luis-salinas-sd.github.io/docs-2022/react/index.html</guid>
-      <description>Capitulo 3 React Notas de React sobre el curso de Fernando Udemy</description>
+      <description>Capitulo 3 React Notas sobre React</description>
+    </item>
+    <item>
+      <title>Componentes</title>
+      <link>https://luis-salinas-sd.github.io/docs-2022/components/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://luis-salinas-sd.github.io/docs-2022/components/index.html</guid>
+      <description>Capitulo 4 Componetes Mis componentes</description>
     </item>
   </channel>
 </rss>

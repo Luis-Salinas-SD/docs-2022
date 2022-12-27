@@ -6,7 +6,8 @@
     <meta name="generator" content="Hugo 0.109.0">
     <meta name="generator" content="Relearn 5.8.1+tip">
     <meta name="description" content="">
-    <title>Arreglos :: Mis Documentaciones</title>
+    <title>Componentes :: Mis Documentaciones</title>
+    <link href="/docs-2022/components/index.xml" rel="alternate" type="application/rss+xml" title="Componentes :: Mis Documentaciones">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/docs-2022/css/fontawesome-all.min.css?1672119525" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/fontawesome-all.min.css?1672119525" rel="stylesheet"></noscript>
     <link href="/docs-2022/css/featherlight.min.css?1672119525" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/featherlight.min.css?1672119525" rel="stylesheet"></noscript>
@@ -39,17 +40,17 @@
     </script>
     <script src="/docs-2022/js/jquery.min.js?1672119525" defer></script>
   </head>
-  <body class="mobile-support html" data-url="/docs-2022/javascript/page-7/index.html">
+  <body class="mobile-support html" data-url="/docs-2022/components/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable" dir="ltr">
         <div>
           <div class="navigation">
-            <a class="nav nav-next" href="/docs-2022/javascript/page-8/index.html" title="Objetos - JSON (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <span class="nav nav-next"><i class="fa fa-chevron-right fa-fw"></i></span>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev" href="/docs-2022/javascript/page-6/index.html" title="Scope (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev" href="/docs-2022/react/index.html" title="React (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
@@ -58,8 +59,7 @@
             <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/docs-2022/index.html"><span itemprop="name">Bievenidos</span></a><meta itemprop="position" content="1"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/docs-2022/javascript/index.html"><span itemprop="name">Javascript</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Arreglos</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Componentes</span><meta itemprop="position" content="2"></li>
             </ol>
           </div>
           <div class="default-animation progress">
@@ -68,9 +68,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#arreglos">Arreglos</a></li>
-        <li><a href="#metodos-para-arreglos">Metodos para arreglos</a></li>
-        <li><a href="#ordenamiento">ordenamiento</a></li>
+        <li><a href="#capitulo-4">Capitulo 4</a></li>
       </ul>
     </li>
   </ul>
@@ -85,90 +83,10 @@
           </div>
           <article class="chapter deprecated">
 
-<h3 id="arreglos">Arreglos</h3>
-<p>Los arrays son objetos similares a una lista cuyo prototipo proporciona métodos para efectuar operaciones de recorrido y de mutación. Tanto la longitud como el tipo de los elementos de un array son variables.</p>
-<ul>
-<li>Declaración:</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arreglo</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;hola&#34;</span>, <span style="color:#ae81ff">1</span>, <span style="color:#66d9ef">true</span>, {}];
-</span></span></code></pre></div><ul>
-<li>Declración de un arreglo y recorrerlo con un <strong>for</strong></li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arreglo</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">6</span>];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">arreglo</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">elemento</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arreglo</span>[<span style="color:#a6e22e">i</span>];
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">elemento</span>);
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><ul>
-<li>
-<p>Agregar y quitar elementos de un arreglo:</p>
-<ul>
-<li>push(); <strong>agrega un elemento al final.</strong></li>
-<li>pop(); <strong>quita el ultimo elemento.</strong></li>
-<li>unshift(); <strong>agrega un elemento al incio.</strong></li>
-<li>shift(); <strong>quita un elemento al inicio.</strong></li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">53</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">45</span>];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">push</span>(<span style="color:#ae81ff">15</span>); <span style="color:#75715e">//agrega un elemento al final
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">pop</span>(); <span style="color:#75715e">// quita el ultimo elemento.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">unshift</span>(<span style="color:#e6db74">&#34;hola&#34;</span>); <span style="color:#75715e">//agrega un elemento al incio
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">shift</span>(); <span style="color:#75715e">//quita un elemento al inicio
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">array</span>);
-</span></span></code></pre></div><ul>
-<li>Agregar y quitar elementos de un arreglo en una <strong>posicion personalizada:</strong></li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">names</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;luis&#34;</span>, <span style="color:#e6db74">&#34;ana&#34;</span>, <span style="color:#e6db74">&#34;dan&#34;</span>, <span style="color:#e6db74">&#34;sergio&#34;</span>, <span style="color:#e6db74">&#34;luchita&#34;</span>, <span style="color:#e6db74">&#34;concha&#34;</span>];
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//             0       1      2       3         4          5
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//splice(#indice en el que se agrgaran, #cantidad de elementos que se van a eliminar #valores que se van a aregar 1,2,3...)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">names</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#34;Junico&#34;</span>, <span style="color:#ae81ff">1</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">names</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//Elimina el valor o valores en la poscicon descrita en este en la posicion cero vamos a eliminar 3 elementos
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">names</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">names</span>); <span style="color:#75715e">// [&#34;sergio&#34;, &#34;luchita&#34;, &#34;concha&#34;]
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Slice extrae en un nuevo array los valores desde [start] hasta [end -1]: No modifia el array original.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nuevo</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">names</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">nuevo</span>); <span style="color:#75715e">//[&#34;ana&#34;, &#34;dan&#34;]
-</span></span></span></code></pre></div><h3 id="metodos-para-arreglos">Metodos para arreglos</h3>
-<p>1 El siguiente es el arreglo que utilizaremos para ejemplos:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arreglo</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">42</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">45</span>];
-</span></span></code></pre></div><p>2 Recorrer un arreglo con <strong>For</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">x</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">arreglo</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">x</span><span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arreglo</span>[<span style="color:#a6e22e">x</span>]);
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>3 Recorrer un arreglo con <strong>for of</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">item</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">arreglo</span>) {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">item</span>);
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>4 <strong>forEache()</strong> sirve para recorrer un arreglo</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">arreglo</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">elemento</span>) =&gt; {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">elemento</span>);
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></div><p>5 <strong>some</strong>devuelve true en caso de que el elemento se encuentre en el arreglo</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arreglo</span>.<span style="color:#a6e22e">some</span>((<span style="color:#a6e22e">el</span>) =&gt; <span style="color:#a6e22e">el</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">45</span>));
-</span></span></code></pre></div><p>6 <strong>filter()</strong> sirve para eliminar un elemento del arreglo</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">arreglo</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arreglo</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">del</span>) =&gt; <span style="color:#a6e22e">del</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">42</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arreglo</span>);
-</span></span></code></pre></div><p>7 <strong>find()</strong> metodo para buscar un elemento dentro del arreglo</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">elemento</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arreglo</span>.<span style="color:#a6e22e">find</span>((<span style="color:#a6e22e">num</span>) =&gt; <span style="color:#a6e22e">num</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">10</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">elemento</span>);
-</span></span></code></pre></div><p>8 <strong>map()</strong> genera un nuevo arreglo para una operacion definida</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">cuadrado</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arreglo</span>.<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">num</span>) =&gt; <span style="color:#a6e22e">num</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">num</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">cuadrado</span>);
-</span></span></code></pre></div><h3 id="ordenamiento">ordenamiento</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">sort</span>()); <span style="color:#75715e">//[1, 5, 5, 5, 6, 8, 8, 9, 9] ordena de menor a mayor
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">reverse</span>()); <span style="color:#75715e">//[9, 9, 8, 8, 6, 5, 5, 5, 1] ordena de mayor a menor
-</span></span></span></code></pre></div>
+<h3 id="capitulo-4">Capitulo 4</h3>
+<h1 id="componetes">Componetes</h1>
+<p>Mis componentes</p>
+
             <footer class="footline">
             </footer>
           </article>
@@ -261,21 +179,21 @@
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics">
-          <li data-nav-id="/docs-2022/javascript/index.html" class="dd-item parent"><a href="/docs-2022/javascript/index.html"><b>1. </b>Javascript</a><ul id="subsections-5e9e6cd156cdef1dacf5f82db70ac8fa">
+          <li data-nav-id="/docs-2022/javascript/index.html" class="dd-item"><a href="/docs-2022/javascript/index.html"><b>1. </b>Javascript</a><ul id="subsections-5e9e6cd156cdef1dacf5f82db70ac8fa">
           <li data-nav-id="/docs-2022/javascript/page-1/index.html" class="dd-item"><a href="/docs-2022/javascript/page-1/index.html"><b>1. </b>Bases</a></li>
           <li data-nav-id="/docs-2022/javascript/page-2/index.html" class="dd-item"><a href="/docs-2022/javascript/page-2/index.html"><b>2. </b>Condicionales</a></li>
           <li data-nav-id="/docs-2022/javascript/page-3/index.html" class="dd-item"><a href="/docs-2022/javascript/page-3/index.html"><b>4. </b>Funciones</a></li>
           <li data-nav-id="/docs-2022/javascript/page-4/index.html" class="dd-item"><a href="/docs-2022/javascript/page-4/index.html"><b>4. </b>Funciones</a></li>
           <li data-nav-id="/docs-2022/javascript/page-5/index.html" class="dd-item"><a href="/docs-2022/javascript/page-5/index.html"><b>5. </b>Arrow-Function</a></li>
           <li data-nav-id="/docs-2022/javascript/page-6/index.html" class="dd-item"><a href="/docs-2022/javascript/page-6/index.html"><b>6. </b>Scope</a></li>
-          <li data-nav-id="/docs-2022/javascript/page-7/index.html" class="dd-item active"><a href="/docs-2022/javascript/page-7/index.html"><b>7. </b>Arreglos</a></li>
+          <li data-nav-id="/docs-2022/javascript/page-7/index.html" class="dd-item"><a href="/docs-2022/javascript/page-7/index.html"><b>7. </b>Arreglos</a></li>
           <li data-nav-id="/docs-2022/javascript/page-8/index.html" class="dd-item"><a href="/docs-2022/javascript/page-8/index.html"><b>8. </b>Objetos - JSON</a></li>
           <li data-nav-id="/docs-2022/javascript/page-9/index.html" class="dd-item"><a href="/docs-2022/javascript/page-9/index.html"><b>9. </b>Funcion constructora</a></li>
           <li data-nav-id="/docs-2022/javascript/page-10/index.html" class="dd-item"><a href="/docs-2022/javascript/page-10/index.html"><b>10. </b>Clases</a></li>
           <li data-nav-id="/docs-2022/javascript/page-11/index.html" class="dd-item"><a href="/docs-2022/javascript/page-11/index.html"><b>11. </b>Clases 2.0</a></li></ul></li>
           <li data-nav-id="/docs-2022/mysql/index.html" class="dd-item"><a href="/docs-2022/mysql/index.html"><b>2. </b>MySQL</a></li>
           <li data-nav-id="/docs-2022/react/index.html" class="dd-item"><a href="/docs-2022/react/index.html"><b>3. </b>React</a></li>
-          <li data-nav-id="/docs-2022/components/index.html" class="dd-item"><a href="/docs-2022/components/index.html"><b>4.</b>Componentes</a></li>
+          <li data-nav-id="/docs-2022/components/index.html" class="dd-item active"><a href="/docs-2022/components/index.html"><b>4.</b>Componentes</a></li>
         </ul>
         <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
         <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
