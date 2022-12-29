@@ -6,7 +6,7 @@
     <meta name="generator" content="Hugo 0.109.0">
     <meta name="generator" content="Relearn 5.8.1+tip">
     <meta name="description" content="">
-    <title>Scope :: Mis Documentaciones</title>
+    <title>Bases :: Mis Documentaciones</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/docs-2022/css/fontawesome-all.min.css?1672291251" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/fontawesome-all.min.css?1672291251" rel="stylesheet"></noscript>
     <link href="/docs-2022/css/featherlight.min.css?1672291251" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/docs-2022/css/featherlight.min.css?1672291251" rel="stylesheet"></noscript>
@@ -39,41 +39,27 @@
     </script>
     <script src="/docs-2022/js/jquery.min.js?1672291251" defer></script>
   </head>
-  <body class="mobile-support html" data-url="/docs-2022/javascript/page-6/index.html">
+  <body class="mobile-support html" data-url="/docs-2022/react/page-1/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable" dir="ltr">
         <div>
           <div class="navigation">
-            <a class="nav nav-next" href="/docs-2022/javascript/page-7/index.html" title="Arreglos (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next" href="/docs-2022/react/page-2/index.html" title="Componentes (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev" href="/docs-2022/javascript/page-5/index.html" title="Arrow-Function (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev" href="/docs-2022/react/index.html" title="React (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
             </span>
-            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/docs-2022/index.html"><span itemprop="name">Bievenidos</span></a><meta itemprop="position" content="1"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/docs-2022/javascript/index.html"><span itemprop="name">Javascript</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Scope</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/docs-2022/react/index.html"><span itemprop="name">React</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Bases</span><meta itemprop="position" content="3"></li>
             </ol>
-          </div>
-          <div class="default-animation progress">
-            <div class="toc-wrapper" dir="ltr">
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#scope">Scope</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-            </div>
           </div>
         </div>
       </nav>
@@ -83,37 +69,8 @@
           </div>
           <article class="chapter deprecated">
 
-<h3 id="scope">Scope</h3>
-<p>El scoupe es una colección de variables, funiones y objetos al alacnce del codigo.</p>
-<p>exiten dos tipos:</p>
-<ul>
-<li>
-<p>Global scoupe [variables globales]
-Las variables globales se pueden mandar a llamar en cualquier parte del programas.</p>
-</li>
-<li>
-<p>local scoupe [Variables locales]
-Adiferencia de las globales, las locales solo se pueden declarar en la funciones y pueden ser mandadas a llamar
-en la misma.</p>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">nombre</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Luis&#34;</span>; <span style="color:#75715e">//scoupe global
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">hola</span>() {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;hola &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">nombre</span>);
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hola</span>();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">adios</span>() {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nombre</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Ana&#34;</span>; <span style="color:#75715e">//scoupe local
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;adios &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">nombre</span>);
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">adios</span>();
-</span></span></code></pre></div><ul>
-<li>CONST: Es una constante la cual NO cambiara su valor en ningún momento en el futuro.</li>
-<li>VAR: Es una variable que SI puede cambiar su valor y su scope es local (dentro de una función o del bloque global).</li>
-<li>LET: Es una variable que también podrá cambiar su valor, pero solo funcionará en el bloque donde fue declarada (ciclos o condiciones) su alcance es mucho menor que var.</li>
-</ul>
+<h1 id="bases-de-react">Bases de React</h1>
+<p>Notas Breves sobre React</p>
 
             <footer class="footline">
             </footer>
@@ -207,21 +164,21 @@ en la misma.</p>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics">
-          <li data-nav-id="/docs-2022/javascript/index.html" class="dd-item parent"><a href="/docs-2022/javascript/index.html"><b>1. </b>Javascript</a><ul id="subsections-5e9e6cd156cdef1dacf5f82db70ac8fa">
+          <li data-nav-id="/docs-2022/javascript/index.html" class="dd-item"><a href="/docs-2022/javascript/index.html"><b>1. </b>Javascript</a><ul id="subsections-5e9e6cd156cdef1dacf5f82db70ac8fa">
           <li data-nav-id="/docs-2022/javascript/page-1/index.html" class="dd-item"><a href="/docs-2022/javascript/page-1/index.html"><b>1. </b>Bases</a></li>
           <li data-nav-id="/docs-2022/javascript/page-2/index.html" class="dd-item"><a href="/docs-2022/javascript/page-2/index.html"><b>2. </b>Condicionales</a></li>
           <li data-nav-id="/docs-2022/javascript/page-3/index.html" class="dd-item"><a href="/docs-2022/javascript/page-3/index.html"><b>4. </b>Funciones</a></li>
           <li data-nav-id="/docs-2022/javascript/page-4/index.html" class="dd-item"><a href="/docs-2022/javascript/page-4/index.html"><b>4. </b>Funciones</a></li>
           <li data-nav-id="/docs-2022/javascript/page-5/index.html" class="dd-item"><a href="/docs-2022/javascript/page-5/index.html"><b>5. </b>Arrow-Function</a></li>
-          <li data-nav-id="/docs-2022/javascript/page-6/index.html" class="dd-item active"><a href="/docs-2022/javascript/page-6/index.html"><b>6. </b>Scope</a></li>
+          <li data-nav-id="/docs-2022/javascript/page-6/index.html" class="dd-item"><a href="/docs-2022/javascript/page-6/index.html"><b>6. </b>Scope</a></li>
           <li data-nav-id="/docs-2022/javascript/page-7/index.html" class="dd-item"><a href="/docs-2022/javascript/page-7/index.html"><b>7. </b>Arreglos</a></li>
           <li data-nav-id="/docs-2022/javascript/page-8/index.html" class="dd-item"><a href="/docs-2022/javascript/page-8/index.html"><b>8. </b>Objetos - JSON</a></li>
           <li data-nav-id="/docs-2022/javascript/page-9/index.html" class="dd-item"><a href="/docs-2022/javascript/page-9/index.html"><b>9. </b>Funcion constructora</a></li>
           <li data-nav-id="/docs-2022/javascript/page-10/index.html" class="dd-item"><a href="/docs-2022/javascript/page-10/index.html"><b>10. </b>Clases</a></li>
           <li data-nav-id="/docs-2022/javascript/page-11/index.html" class="dd-item"><a href="/docs-2022/javascript/page-11/index.html"><b>11. </b>Clases 2.0</a></li></ul></li>
           <li data-nav-id="/docs-2022/mysql/index.html" class="dd-item"><a href="/docs-2022/mysql/index.html"><b>2. </b>MySQL</a></li>
-          <li data-nav-id="/docs-2022/react/index.html" class="dd-item"><a href="/docs-2022/react/index.html"><b>3. </b>React</a><ul id="subsections-b79bea942975f0df1a2af2203cc75956">
-          <li data-nav-id="/docs-2022/react/page-1/index.html" class="dd-item"><a href="/docs-2022/react/page-1/index.html"><b>1. </b>Bases</a></li>
+          <li data-nav-id="/docs-2022/react/index.html" class="dd-item parent"><a href="/docs-2022/react/index.html"><b>3. </b>React</a><ul id="subsections-b79bea942975f0df1a2af2203cc75956">
+          <li data-nav-id="/docs-2022/react/page-1/index.html" class="dd-item active"><a href="/docs-2022/react/page-1/index.html"><b>1. </b>Bases</a></li>
           <li data-nav-id="/docs-2022/react/page-2/index.html" class="dd-item"><a href="/docs-2022/react/page-2/index.html"><b>2. </b>Componentes</a></li>
           <li data-nav-id="/docs-2022/react/page-3/index.html" class="dd-item"><a href="/docs-2022/react/page-3/index.html"><b>3. </b>Props</a></li></ul></li>
           <li data-nav-id="/docs-2022/components/index.html" class="dd-item"><a href="/docs-2022/components/index.html"><b>4.</b>Componentes</a></li>

@@ -6,5 +6,29 @@
     <description>Recent content in React on Mis Documentaciones</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://luis-salinas-sd.github.io/docs-2022/react/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bases</title>
+      <link>https://luis-salinas-sd.github.io/docs-2022/react/page-1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://luis-salinas-sd.github.io/docs-2022/react/page-1/index.html</guid>
+      <description>Bases de React Notas Breves sobre React</description>
+    </item>
+    <item>
+      <title>Componentes</title>
+      <link>https://luis-salinas-sd.github.io/docs-2022/react/page-2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://luis-salinas-sd.github.io/docs-2022/react/page-2/index.html</guid>
+      <description>Componentes No es obligatorio, pero por buenas practicas el archivo en el cual vamos a crear nuestro componente se debe llamar igual que el componente, por ejemplo vamos a crear uno con el siguiente nombre AppComponent.
+AppComponent.jsx main.jsx const AppComponent = () =&amp;gt; { return ( &amp;lt;div&amp;gt; &amp;lt;span&amp;gt;El Componente se llama AppComponent&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;bloque 2&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;bloque 3&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; ); }; import React from &amp;#34;react&amp;#34;; import ReactDOM from &amp;#34;react-dom/client&amp;#34;; //Importación del componente funcional AppComponent import AppComponent from &amp;#34;.</description>
+    </item>
+    <item>
+      <title>Props</title>
+      <link>https://luis-salinas-sd.github.io/docs-2022/react/page-3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://luis-salinas-sd.github.io/docs-2022/react/page-3/index.html</guid>
+      <description>Props Las props son las propiedades que se le pasan al componente, son como los argumentos de las funciones que estos esperan a ser manejados por la misma.
+Podemos enviar una prop al componente de la siguiente manera:
+En el archivo principal a nuestro componente ComponentUser le vamos a pasar 2 props, una llada nombre y otra puesto.</description>
+    </item>
   </channel>
 </rss>
