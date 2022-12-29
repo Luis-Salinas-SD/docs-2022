@@ -28,7 +28,17 @@ AppComponent.jsx main.jsx const AppComponent = () =&amp;gt; { return ( &amp;lt;d
       <guid>https://luis-salinas-sd.github.io/docs-2022/react/page-3/index.html</guid>
       <description>Props Las props son las propiedades que se le pasan al componente, son como los argumentos de las funciones que estos esperan a ser manejados por la misma.
 Podemos enviar una prop al componente de la siguiente manera:
-En el archivo principal a nuestro componente ComponentUser le vamos a pasar 2 props, una llada nombre y otra puesto.</description>
+En el archivo principal a nuestro componente ComponentUser le vamos a pasar 2 props, una llada nombre y otra puesto.
+main.jsx ComponentUser.jsx &amp;lt;ComponentUser nombre=&amp;#34;Ana&amp;#34; puesto=&amp;#34;Frontend Developer&amp;#34;&amp;gt; //El componente recibe las props nombre y puesto const ComponentUser = ({ nombre, puesto }) =&amp;gt; { return ( &amp;lt;div&amp;gt; &amp;lt;span&amp;gt; Hola {nombre} tu puesto es: {puesto} &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; ); }; La salida seria algo así:</description>
+    </item>
+    <item>
+      <title>Eventos</title>
+      <link>https://luis-salinas-sd.github.io/docs-2022/react/page-4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://luis-salinas-sd.github.io/docs-2022/react/page-4/index.html</guid>
+      <description>Eventos Los eventos en React son muy similares que en Javascript
+En el boton Agregar establecemos el evento onClick
+import React from &amp;#34;react&amp;#34;; const Eventos = ({ valor }) =&amp;gt; { const addOne = () =&amp;gt; { console.log(valor + 1); }; return ( &amp;lt;&amp;gt; &amp;lt;button onClick={addOne}&amp;gt;Agregar!&amp;lt;/button&amp;gt; &amp;lt;/&amp;gt; ); }; export default Eventos; </description>
     </item>
   </channel>
 </rss>
