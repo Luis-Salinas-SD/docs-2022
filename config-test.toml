@@ -1,0 +1,6 @@
+themeVariant = 'relearn-dark'
+baseURL = 'https://docs.cerolineal.com'
+languageCode = 'en-us'
+title = 'Mis Documentaciones'
+theme = 'relearn'
+publishDir = 'docs'
